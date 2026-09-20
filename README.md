@@ -57,6 +57,12 @@ narrowest width band to **1.4%** in the widest.
 The operational consequence is that loss is not reduced by pressuring machines.
 It is reduced by changing what runs narrow, which is a planning decision rather
 than a shop-floor one.
+![Machine performance with width-adjusted loss gap](images/machine-performance.png)
+*Loss %, Expected Loss % and Loss Gap per machine. The Gap column is the machine; the rest is material mix.*
+
+![Loss by coil width](images/size-loss.png)
+![Monthly loss trend with control band](images/monthly-trend.png)
+![Data health](images/data-health.png)
 
 ## How the comparison works
 
