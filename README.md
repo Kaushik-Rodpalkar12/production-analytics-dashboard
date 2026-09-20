@@ -19,6 +19,22 @@ standing assumption was that the weak machines were the problem.
 
 The dashboard was built to answer one question properly: **which machine is
 genuinely underperforming, and which is only running harder material?**
+## How the scope arrived at that question
+
+The original request was narrower. The CEO wanted the monthly production
+summary — until then compiled by hand — produced consistently, so the first
+version was a machine-wise and month-wise view in Excel.
+
+That version was reviewed by the Business Development head, whose response
+reframed the brief: a monthly total per machine does not explain anything, and
+the number worth understanding is scrap. The second round therefore had to reach
+material and coil-size level, which the hand-compiled process had never done and
+which the raw register could not support without cleaning first.
+
+Two things followed from that review. The analysis moved from reporting output
+to explaining loss, and the deliverable moved from a summary to a tool the
+business could interrogate itself. The width-mix finding below only surfaced
+because the scope widened at that second step.
 
 ## The answer
 
