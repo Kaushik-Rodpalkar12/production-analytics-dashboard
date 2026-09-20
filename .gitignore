@@ -1,0 +1,13 @@
+# Production data — not published. Run make_sample_data.py for a stand-in.
+Production_Report.xlsx
+*.xlsx
+*.xls
+*.csv
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db

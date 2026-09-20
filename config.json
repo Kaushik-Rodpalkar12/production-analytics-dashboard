@@ -1,0 +1,50 @@
+{
+  "_comment_targets": "Daily committed target in TONS per machine. Monthly target = daily x working_days_per_month. Machines listed here get a target; anything not listed (e.g. Outside job work) is reported without a target. The values below match the sample dataset, not any real plant.",
+  "machine_daily_target_tons": {
+    "Machine 1": 1.0,
+    "Machine 2": 1.0,
+    "Machine 3": 1.0,
+    "Machine 4": 3.0,
+    "Machine 5": 3.0,
+    "Machine 6": 3.0,
+    "Machine 7": 20.0
+  },
+
+  "working_days_per_month": 26,
+
+  "_comment_loss": "Plant-level acceptable loss (TOTAL SCRAP / SLITTING IN, as %). Used as the reference line on every loss chart.",
+  "plant_loss_target_pct": 2.0,
+
+  "_comment_scope": "Machine groups for the global scope selector. Order here is the order shown in the sidebar; the first one is the default.",
+  "scopes": {
+    "In-house slitting (M1-M6)": ["Machine 1", "Machine 2", "Machine 3", "Machine 4", "Machine 5", "Machine 6"],
+    "In-house incl. Machine 7": ["Machine 1", "Machine 2", "Machine 3", "Machine 4", "Machine 5", "Machine 6", "Machine 7"],
+    "All incl. Outside job work": null
+  },
+
+  "_comment_bands": "Upper edges in mm for the RM width bands used in the Size & Loss analysis.",
+  "width_band_edges_mm": [50, 150, 400, 800],
+
+  "_comment_thickness": "Upper edges in mm for the RM thickness bands.",
+  "thickness_band_edges_mm": [0.4, 0.8, 1.2, 2.0],
+
+  "_comment_guard": "A machine/band cell is only allowed to generate a written insight if it has at least this many tons of input. Stops small samples from producing headline claims.",
+  "min_tons_for_insight": 25.0,
+
+  "_comment_operators": "Names that belong to outside job-work firms rather than in-house operators. Kept out of operator performance comparisons.",
+  "vendor_operators": [
+    "VENDOR ONE", "VENDOR TWO", "VENDOR THREE", "VENDOR FOUR"
+  ],
+
+  "_comment_aliases": "Spelling variants of the same person or firm, collapsed to one name. LEFT = as typed in Excel, RIGHT = canonical. The live plant file needs a much longer list than this.",
+  "operator_aliases": {
+    "OPERATOR A.": "OPERATOR A",
+    "OPRATOR B": "OPERATOR B"
+  },
+
+  "_comment_tat": "A job taking longer than this many days between Outward (sent to machine) and Inward (returned) is flagged for review.",
+  "max_reasonable_tat_days": 60,
+
+  "_comment_massbal": "Mass-balance tolerance in tons: |IN - (OUT + TRIM + SCRAP + EXCESS + SHOT)| above this is flagged.",
+  "mass_balance_tolerance_tons": 0.05
+}
